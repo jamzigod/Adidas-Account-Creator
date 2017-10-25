@@ -45,7 +45,7 @@ def create_account():
     if "e-mail address already exists" in res.text:
         print(((time.strftime("%H:%M:%S") + ' - This email "' + email + '" is a duplicate!')))
     else:
-        print(((time.strftime("%H:%M:%S") + " - Successfully adidas created account with " + email + "!")))
+        print(((time.strftime("%H:%M:%S") + " - Successfully adidas created account with " + email)))
 
 
 for i in range (times):
