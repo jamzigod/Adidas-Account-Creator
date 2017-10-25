@@ -5,4 +5,4 @@ Adidas account generator for UK/US with captcha bypass.
 - open terminal 
 - python adi-account-gen.py
 
-Questions, follow and message - www.twitter.com/jamzigod
+Questions, follow and tweet/message - www.twitter.com/jamzigod
