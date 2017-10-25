@@ -2,7 +2,7 @@
 Adidas account generator for UK/US with captcha bypass. 
 
 - install requirements (requests and getrandbits)
-- edit adi-account-gen.py to have your credentails (name and d.o.b) 
+- edit adi-account-gen.py to have your chosen credentails (name and d.o.b) 
 - open terminal 
 - python adi-account-gen.py
 
