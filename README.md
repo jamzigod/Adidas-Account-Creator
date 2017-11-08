@@ -1,5 +1,7 @@
 # Adidas-Account-Generator
-Adidas account generator for UK/US with captcha bypass for Python 3. 
+Adidas account generator for UK/US with captcha bypass.
+
+Must have Python 3 to run this script.
 
 - install requirements (requests and getrandbits)
 - edit adi-account-gen.py to have your chosen credentails (name and d.o.b) 
