@@ -1,5 +1,5 @@
-# Adidas-Account-Generator
-Adidas account generator for UK/US with captcha bypass.
+# Adidas-Account-Creator
+Adidas account creator for UK/US with captcha bypass.
 
 Must have Python 3 to run this script.
 
