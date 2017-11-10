@@ -16,7 +16,11 @@ base_email = "carts" #Enter base of the email you want to use
 domain = "@jamzigod.com" #Enter domain for your emails e.g. (@gmail.com)
 times = int(input("[" + (time.strftime("%H:%M:%S") + "]" + " - Enter the number of account(s) you would like to create: "))) #DONT CHANGE
 
+text_file = open("Accounts.txt", "w")
+
 def create_account():
+
+    global email
 
     email = (base_email + "{}" + domain).format(getrandbits(40))
 
@@ -50,7 +54,11 @@ def create_account():
         print("[" + (time.strftime("%H:%M:%S") + "]" + ' - This email "' + email + '" is a duplicate!'))
     else:
         print("[" + (time.strftime("%H:%M:%S") + "]" + " - Successfully created adidas account with " + email))
+        write()
 
+def write():
+
+    text_file.write(email + ":" + password + "\n")
 
 for i in range (times):
     create_account()
