@@ -6,12 +6,12 @@ print ((time.strftime("%H:%M:%S") + " - Adidas account creator with captcha bypa
 
 time.sleep(2)
 
-first_name = "Jamzi" #CHANGE
-last_name = "God" #CHANGE
-password = "Adidas123" #CHANGE
-base_email = input(((time.strftime("%H:%M:%S") + " - Enter base of the email you want to use: ")))
-domain = input(((time.strftime("%H:%M:%S") + " - Enter domain for your emails e.g. (@gmail.com): ")))
-times = int(input(((time.strftime("%H:%M:%S") + " - Enter the number of account(s) you would like to create: "))))
+first_name = "Jamzi" #Enter first name
+last_name = "God" #Enter last name
+password = "Adidas123" #Enter chosen password
+base_email = "carts" #Enter base of the email you want to use
+domain = "@gmail.com" #Enter domain for your emails e.g. (@gmail.com)
+times = int(input(((time.strftime("%H:%M:%S") + " - Enter the number of account(s) you would like to create: ")))) #DONT CHANGE
 
 def create_account():
 
