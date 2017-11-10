@@ -2,7 +2,10 @@ import requests
 import time
 from random import getrandbits
 
-print ((time.strftime("%H:%M:%S") + " - Adidas account creator with captcha bypass by @jamzigod!"))
+print ("[" + (time.strftime("%H:%M:%S")) + "]" + " --------------------------------------------")
+print ("[" + (time.strftime("%H:%M:%S")) + "]" + " - Adidas account creator with captcha bypass")
+print ("[" + (time.strftime("%H:%M:%S")) + "]" + " - Developed by @jamzigod")
+print ("[" + (time.strftime("%H:%M:%S")) + "]" + " --------------------------------------------\n")
 
 time.sleep(2)
 
@@ -10,8 +13,8 @@ first_name = "Jamzi" #Enter first name
 last_name = "God" #Enter last name
 password = "Adidas123" #Enter chosen password
 base_email = "carts" #Enter base of the email you want to use
-domain = "@gmail.com" #Enter domain for your emails e.g. (@gmail.com)
-times = int(input(((time.strftime("%H:%M:%S") + " - Enter the number of account(s) you would like to create: ")))) #DONT CHANGE
+domain = "@jamzigod.com" #Enter domain for your emails e.g. (@gmail.com)
+times = int(input("[" + (time.strftime("%H:%M:%S") + "]" + " - Enter the number of account(s) you would like to create: "))) #DONT CHANGE
 
 def create_account():
 
@@ -44,9 +47,9 @@ def create_account():
     res = s.post(base_url, params=params)
 
     if "e-mail address already exists" in res.text:
-        print(((time.strftime("%H:%M:%S") + ' - This email "' + email + '" is a duplicate!')))
+        print("[" + (time.strftime("%H:%M:%S") + "]" + ' - This email "' + email + '" is a duplicate!'))
     else:
-        print(((time.strftime("%H:%M:%S") + " - Successfully created adidas account with " + email)))
+        print("[" + (time.strftime("%H:%M:%S") + "]" + " - Successfully created adidas account with " + email))
 
 
 for i in range (times):
