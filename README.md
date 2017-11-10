@@ -4,7 +4,7 @@ Adidas account creator for UK/US with captcha bypass.
 Must have Python 3 to run this script.
 
 - install requirements (requests and getrandbits)
-- edit account.py to have your chosen credentails (name and d.o.b) 
+- edit account.py to have your chosen credentails (name ect.) 
 - open terminal 
 - python account.py
 
