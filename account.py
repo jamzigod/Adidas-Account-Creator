@@ -13,7 +13,7 @@ first_name = "Jamzi" #Enter first name
 last_name = "God" #Enter last name
 password = "Adidas123" #Enter chosen password
 base_email = "carts" #Enter base of the email you want to use
-domain = "@jamzigod.com" #Enter domain for your emails e.g. (@gmail.com)
+domain = "@jamzi.com" #Enter domain for your emails e.g. (@gmail.com)
 times = int(input("[" + (time.strftime("%H:%M:%S") + "]" + " - Enter the number of account(s) you would like to create: "))) #DONT CHANGE
 
 text_file = open("Accounts.txt", "w")
