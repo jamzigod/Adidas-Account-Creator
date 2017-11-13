@@ -12,13 +12,16 @@ time.sleep(2)
 
 with open('config.json') as json_data_file:
     data = json.load(json_data_file)
+    print("[" + (time.strftime("%H:%M:%S")) + "]" + " - Config.json loaded!")
+    time.sleep(1)
 
 first_name = data["first_name"]
 last_name = data["last_name"]
 password = data["password"]
 prefix = data["prefix"]
 domain = data["domain"]
-times = int(input("[" + (time.strftime("%H:%M:%S") + "]" + " - Enter the number of account(s) you would like to create: "))) #DONT CHANGE
+
+times = int(input("[" + (time.strftime("%H:%M:%S") + "]" + " - Enter the number of account(s) you would like to create: ")))
 
 text_file = open("Accounts.txt", "w")
 
@@ -29,6 +32,10 @@ def create_account():
     email = (prefix + "{}" + domain).format(getrandbits(40))
 
     base_url = "https://shop.miteam.adidas.co.uk/miadidas-miteam/Login.action"
+
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.111 Safari/537.36",
+        "Accept-Language": "en-US,en;q=0.8"}
 
     s = requests.session()
 
@@ -52,7 +59,7 @@ def create_account():
     }
 
 
-    res = s.post(base_url, params=params)
+    res = s.post(base_url, params=params, headers=headers)
 
     if "e-mail address already exists" in res.text:
         print("[" + (time.strftime("%H:%M:%S") + "]" + ' - This email "' + email + '" is a duplicate!'))
