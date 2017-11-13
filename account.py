@@ -1,6 +1,7 @@
 import requests
 import time
 from random import getrandbits
+import json
 
 print ("[" + (time.strftime("%H:%M:%S")) + "]" + " --------------------------------------------")
 print ("[" + (time.strftime("%H:%M:%S")) + "]" + " - Adidas account creator with captcha bypass")
@@ -9,11 +10,14 @@ print ("[" + (time.strftime("%H:%M:%S")) + "]" + " -----------------------------
 
 time.sleep(2)
 
-first_name = "Jamzi" #Enter first name
-last_name = "God" #Enter last name
-password = "Adidas123" #Enter chosen password
-base_email = "carts" #Enter base of the email you want to use
-domain = "@jamzi.com" #Enter domain for your emails e.g. (@gmail.com)
+with open('config.json') as json_data_file:
+    data = json.load(json_data_file)
+
+first_name = data["first_name"]
+last_name = data["last_name"]
+password = data["password"]
+prefix = data["prefix"]
+domain = data["domain"]
 times = int(input("[" + (time.strftime("%H:%M:%S") + "]" + " - Enter the number of account(s) you would like to create: "))) #DONT CHANGE
 
 text_file = open("Accounts.txt", "w")
@@ -22,7 +26,7 @@ def create_account():
 
     global email
 
-    email = (base_email + "{}" + domain).format(getrandbits(40))
+    email = (prefix + "{}" + domain).format(getrandbits(40))
 
     base_url = "https://shop.miteam.adidas.co.uk/miadidas-miteam/Login.action"
 
