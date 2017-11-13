@@ -1,8 +1,6 @@
 # Adidas-Account-Creator
 Adidas account creator for UK/US with captcha bypass.
 
-![]({{site.baseurl}}//adcacc.PNG)
-
 **Must have Python 3 to run this script.**
 
 **ONLY CHANGE THE CONFIG.JSON NOT ANYTHING IN THE SCRIPT!**
