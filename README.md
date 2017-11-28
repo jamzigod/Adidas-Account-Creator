@@ -1,4 +1,7 @@
 # Adidas-Account-Creator
+
+**CURRENTLY NOT WORKING, UPDATE COMING SOON**
+
 Adidas account creator for UK/US with captcha bypass.
 
 ![](https://pbs.twimg.com/media/DOOzhAQWkAASt2W.jpg:large)
